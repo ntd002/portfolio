@@ -48,12 +48,13 @@ body {
 
 form {
   display: grid;
+  grid-template-columns: auto 1fr;
 }
 
 input, textarea, button {
   /*Form controls*/
   font: inherit;
-  grid-template-columns: auto 1fr;
+  
   /*display: block;
   width: 100%;
   box-sizing: border-box;*/
