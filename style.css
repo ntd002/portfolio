@@ -46,3 +46,12 @@ body {
   accent-color: var(--color-accent);
 }
 
+input, textarea, button {
+  font: inherit;
+  display: block;
+}
+
+label {
+  display: block;
+}
+
