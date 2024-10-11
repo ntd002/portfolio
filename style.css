@@ -15,9 +15,9 @@ a {
 }
 
 a.current {
-  border-bottom-width: 0.4em;
+  border-bottom-width: 5em;
   border-bottom-color: oklch(85% 3% 200);
-  padding-bottom: 0.4em;
+  padding-bottom: 5em;
 }
 
 img.big_image {
