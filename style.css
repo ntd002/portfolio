@@ -15,9 +15,10 @@ a {
 }
 
 a.current {
-  border-bottom-width: 5em;
-  border-bottom-color: oklch(85% 3% 200);
-  padding-bottom: 5em;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: oklch(90% 3% 200);
+  padding-bottom: 5px;
 }
 
 img.big_image {
