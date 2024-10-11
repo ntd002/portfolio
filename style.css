@@ -46,16 +46,21 @@ body {
   accent-color: var(--color-accent);
 }
 
+form {
+  display: grid;
+}
+
 input, textarea, button {
   /*Form controls*/
   font: inherit;
-  display: block;
+  grid-template-columns: auto 1fr;
+  /*display: block;
   width: 100%;
-  box-sizing: border-box;
+  box-sizing: border-box;*/
 }
 
 label {
-  display: block;
-  margin-block: 1em;
+  /*display: block;
+  margin-block: 1em;*/
 }
 
