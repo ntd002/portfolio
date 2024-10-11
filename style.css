@@ -6,6 +6,10 @@ a {
   flex: 1;
 }
 
+img.big_image {
+  width: 75%;
+}
+
 body {
   /* Set line height to 1.5 times the font size
 	   and use the OS’s UI font as the website font
