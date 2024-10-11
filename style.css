@@ -82,7 +82,7 @@ button {
 article {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 3;
+  grid-row: span 2;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,4 +96,14 @@ h1 {
 
 h2 {
   margin: 0;
+}
+
+.resumes {
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+}
+
+section {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 2;
 }
