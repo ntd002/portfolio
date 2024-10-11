@@ -47,11 +47,15 @@ body {
 }
 
 input, textarea, button {
+  /*Form controls*/
   font: inherit;
   display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 label {
   display: block;
+  margin-block: 0.4em;
 }
 
