@@ -107,3 +107,15 @@ article.subResume {
   grid-template-rows: subgrid;
   grid-row: span 3;
 }
+
+body.bodyResume {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+div.divResume {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+}
