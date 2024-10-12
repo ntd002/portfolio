@@ -114,10 +114,15 @@ ul, li {
 
 ul {
   display: flex;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: oklch(80% 3% 200);
 }
 
 li {
   flex: 1;
+  text-align: center
+  padding: 1em;
 }
 
 body.bodyResume {
