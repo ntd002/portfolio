@@ -97,7 +97,7 @@ h2 {
   margin: 0;
 }
 
-.resumes {
+/*.resumes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
 }
@@ -106,7 +106,7 @@ article.subResume {
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 3;
-}
+}*/
 
 body.bodyResume {
   display: grid;
