@@ -102,6 +102,10 @@ div.resumes {
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
 }
 
+ul li {
+  display: block;
+}
+
 /* .resumes {
   display: grid;
   gap: 10px 10px;
