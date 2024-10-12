@@ -105,5 +105,5 @@ h2 {
 article.subResume {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 2;
+  grid-row: span 3;
 }
