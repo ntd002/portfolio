@@ -97,7 +97,7 @@ h2 {
   margin: 0;
 }
 
-/*.resumes {
+.resumes {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
 }
@@ -106,17 +106,13 @@ article.subResume {
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 3;
-}*/
-
-article.subResume {
-  border-width: 1.5px;
+  border-width: 5px;
   border-style: solid;
   border-color: oklch(80% 3% 200);
   border-end-end-radius: 50px 50px;
-  padding: 1em;
 }
 
-ul, li {
+/*ul, li {
   display: contents;
 }
 
@@ -127,9 +123,10 @@ ul {
 
 li {
   flex: 1;
-  /*text-align: center;
-  padding: 1em;*/
-}
+  text-align: center;
+  padding: 1em;
+}*/
+
 /*
 body.bodyResume {
   display: grid;
