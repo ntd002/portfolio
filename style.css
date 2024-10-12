@@ -112,6 +112,8 @@ article.subResume {
   border-width: 1.5px;
   border-style: solid;
   border-color: oklch(80% 3% 200);
+  border-end-end-radius: 50px 50px;
+  padding: 1em;
 }
 
 ul, li {
@@ -120,6 +122,7 @@ ul, li {
 
 ul {
   display: flex;
+  padding: 0.5em;
 }
 
 li {
