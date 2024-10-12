@@ -108,6 +108,18 @@ article.subResume {
   grid-row: span 3;
 }*/
 
+ul, li {
+  display: contents;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  flex: 1;
+}
+
 body.bodyResume {
   display: grid;
   grid-template-columns: auto 1fr;
