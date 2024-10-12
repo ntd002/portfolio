@@ -99,10 +99,10 @@ h2 {
 
 .resumes {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
 }
 
-section {
+article.subResume {
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 2;
