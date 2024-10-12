@@ -108,15 +108,18 @@ article.subResume {
   grid-row: span 3;
 }*/
 
+article.subResume {
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: oklch(80% 3% 200);
+}
+
 ul, li {
   display: contents;
 }
 
 ul {
   display: flex;
-  border-width: 1.5px;
-  border-style: solid;
-  border-color: oklch(80% 3% 200);
 }
 
 li {
@@ -124,7 +127,7 @@ li {
   text-align: center;
   padding: 1em;
 }
-
+/*
 body.bodyResume {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -135,4 +138,4 @@ div.divResume {
   display: grid;
   grid-template-columns: subgrid;
   grid-column: 1 / -1;
-}
+}*/
