@@ -103,7 +103,7 @@ div.resumes {
 }
 
 ul li {
-  display: block;
+  display: contents;
 }
 
 /* .resumes {
