@@ -99,52 +99,5 @@ h2 {
 
 div.resumes {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(30em, 1fr));
 }
-
-ul li {
-  display: contents;
-}
-
-/* .resumes {
-  display: grid;
-  gap: 10px 10px;
-}
-
-article.subResume {
-  display: grid;
-  grid-template-rows: subgrid;
-  grid-row: span 1;
-  border-width: 5px;
-  border-style: solid;
-  border-color: oklch(80% 3% 200);
-  border-radius: 50px 50px;
-} */
-
-/*ul, li {
-  display: contents;
-}
-
-ul {
-  display: flex;
-  padding: 0.5em;
-}
-
-li {
-  flex: 1;
-  text-align: center;
-  padding: 1em;
-}*/
-
-/*
-body.bodyResume {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1em;
-}
-
-div.divResume {
-  display: grid;
-  grid-template-columns: subgrid;
-  grid-column: 1 / -1;
-}*/
