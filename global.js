@@ -50,7 +50,7 @@ for (let p of pages) {
         a.classList.add('current');
     }
     //making github profile target=blank
-    if (url ==' https://github.com/ntd002')
+    if (url === 'https://github.com/ntd002')
     {
         a.target = "_blank"
     }
