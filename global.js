@@ -30,11 +30,19 @@ document.body.prepend(nav);
 
 
 for (let p of pages) {
-let url = p.url;
-let title = p.title;
-if (!ARE_WE_HOME && !url.startsWith('http')) {
-    url = '../' + url;
-  }
-nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
+    let url = p.url;
+    let title = p.title;
+    if (!ARE_WE_HOME && !url.startsWith('http')) 
+    {
+        url = '../' + url;
+    }
+    //create a link
+    let a = document.createElement('a');
+
+    a.href = url;
+    a.textContent = title;
+    nav.append(a);
+  
+
 }
 
