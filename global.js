@@ -17,6 +17,7 @@ function $$(selector, context = document) {
 //     currentLink.classList.add('current');
 //   }
 
+// create a navbar
 let pages = [
     { url: '', title: 'Home' },
     { url: 'projects/', title: 'Projects' },
@@ -42,7 +43,22 @@ for (let p of pages) {
     a.href = url;
     a.textContent = title;
     nav.append(a);
-  
+
+    //current tab is current style
+    if (a.host === location.host && a.pathname === location.pathname) 
+    {
+        a.classList.add('current');
+    }
+    //making github profile target=blank
+    if (url ==' https://github.com/ntd002')
+    {
+        a.target = "_blank"
+    }
 
 }
 
+//current tab is current
+
+
+  
+//making github profile target=blank
