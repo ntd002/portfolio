@@ -14,3 +14,21 @@ function $$(selector, context = document) {
 //     // or if (currentLink !== undefined)
 //     currentLink.classList.add('current');
 //   }
+
+let pages = [
+    { url: '', title: 'Home' },
+    { url: 'projects/', title: 'Projects' },
+    { url: 'contact/', title: 'Contact' },
+    { url: 'resume/', title: 'Resumes' },
+    { url: 'https://github.com/ntd002', title: 'Github Profile' },
+  ];
+
+let nav = document.createElement('nav');
+document.body.prepend(nav);
+
+
+for (let p of pages) {
+let url = p.url;
+let title = p.title;
+nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
+}
