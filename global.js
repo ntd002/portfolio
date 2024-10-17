@@ -94,9 +94,9 @@ if (form) {
         let data = new FormData(form);
         for (let [name, value] of data) {
             // TODO build URL parameters here
-            url = form.action('?'=name=encodeURIComponent(value))
-            location.href = url;
-            console.log(url);
+            let newURL = form.action('?'=name=encodeURIComponent(value))
+            location.href = newURL;
+            console.log(newURL);
           }
 
     });
