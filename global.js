@@ -96,8 +96,8 @@ if (form) {
         for (let [name, value] of data) {
             //mailto:leaverou@mit.edu?subject=Hello&body=Sup?
             let url = form.action +"?subject=" + name + "&body=" + encodeURIComponent(value);
+            console.log(url);
             location.href = url;
-            //console.log(name, value);
           }
 
     });
