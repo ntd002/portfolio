@@ -89,5 +89,5 @@ if (localStorage.getItem("colorScheme") !== null) {
 //updating contact form
 let form = document.querySelector("form");
 form?.addEventListener('select', function (event) {
-    event.preventDefault()
+    event.preventDefault();
 });
