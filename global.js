@@ -84,3 +84,10 @@ if (localStorage.getItem("colorScheme") !== null) {
     select.value=localStorage.colorScheme;
     document.documentElement.style.setProperty('color-scheme', localStorage.colorScheme);
   }
+
+
+//updating contact form
+let form = document.querySelector("form");
+form?.addEventListener('select', function (event) {
+    event.preventDefault()
+});
