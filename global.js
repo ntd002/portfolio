@@ -93,13 +93,18 @@ if (form) {
     form.addEventListener('submit', function (event) {
         event.preventDefault();
         let data = new FormData(form);
+
+        let url = form.action;
+        let tempChar = '?'
+
         for (let [name, value] of data) {
             //mailto:leaverou@mit.edu?subject=Hello&body=Sup?
             console.log(name, encodeURIComponent(value))
-            let url = form.action +"?subject=" + name + "&body=" + encodeURIComponent(value);
-            console.log(url);
-            location.href = url;
+            url = url + tempChar + name +"="+ encodeURIComponent(value);
+            tempChar = '&'
+            
           }
-
+          url = url +'?';
+          location.href = url;
     });
     }
