@@ -88,6 +88,11 @@ if (localStorage.getItem("colorScheme") !== null) {
 
 //updating contact form
 let form = document.querySelector("form");
-form?.addEventListener('submit', function (event) {
-    event.preventDefault();
-});
+if (form) {
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+    });
+    }
+else {
+    console.log('No form detected');
+}
