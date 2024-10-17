@@ -87,17 +87,18 @@ if (localStorage.getItem("colorScheme") !== null) {
 
 
 //updating contact form
-// let form = document.querySelector("form");
-// if (form) {
-//     form.addEventListener('submit', function (event) {
-//         event.preventDefault();
-//         let data = new FormData(form);
-//         for (let [name, value] of data) {
-//             // TODO build URL parameters here
-//             let newURL = form.action('?'=name=encodeURIComponent(value))
-//             location.href = newURL;
-//             console.log(newURL);
-//           }
+let form = document.querySelector("form");
+if (form) {
+    console.log("On Contact Page")
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        let data = new FormData(form);
+        for (let [name, value] of data) {
+            let newURL = form.action('?'=name=encodeURIComponent(value))
+            location.href = newURL;
+            console.log(newURL);
+            //console.log(name, value);
+          }
 
-//     });
-//     }
+    });
+    }
