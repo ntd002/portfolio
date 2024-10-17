@@ -102,15 +102,12 @@ if (form) {
 
         for (let [name, value] of data) {
             //first round: + ?subject=Hello
-            //second round: + &body=Sup
+            //second round: + &body=Sup?
 
             url = url + tempChar + name +"="+ encodeURIComponent(value);
             tempChar = '&'
             
           }
-
-          //finish with ?
-          url = url +'?';
           location.href = url;
     });
     }
