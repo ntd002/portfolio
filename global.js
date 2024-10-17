@@ -94,16 +94,22 @@ if (form) {
         event.preventDefault();
         let data = new FormData(form);
 
+        //goal: mailto:leaverou@mit.edu?subject=Hello&body=Sup?
+
+        //start with: mailto:leaverou@mit.edu
         let url = form.action;
         let tempChar = '?'
 
         for (let [name, value] of data) {
-            //mailto:leaverou@mit.edu?subject=Hello&body=Sup?
-            console.log(name, encodeURIComponent(value))
+            //first round: + ?subject=Hello
+            //second round: + &body=Sup
+
             url = url + tempChar + name +"="+ encodeURIComponent(value);
             tempChar = '&'
             
           }
+
+          //finish with ?
           url = url +'?';
           location.href = url;
     });
