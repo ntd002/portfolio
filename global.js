@@ -96,7 +96,7 @@ if (form) {
             // TODO build URL parameters here
             form.action('?'=name=encodeURIComponent(value))
             location.href = url;
-            //console.log(name, encodeURIComponent(value));
+            console.log(url);
           }
 
     });
