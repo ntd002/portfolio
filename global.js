@@ -91,13 +91,11 @@ let form = document.querySelector("form");
 if (form) {
     form.addEventListener('submit', function (event) {
         event.preventDefault();
-        let data = new FormData();
-
+        let data = new FormData(form);
         for (let [name, value] of data) {
             // TODO build URL parameters here
             console.log(name, value);
           }
-
 
     });
     }
