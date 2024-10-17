@@ -71,7 +71,7 @@ document.body.insertAdjacentHTML(
       </label>`,
   );
 
-let select = $$("label select");
+let select = document.querySelector("select");
 
 select.addEventListener('input', function (event) {
     console.log('color scheme changed to', event.target.value);
