@@ -81,5 +81,6 @@ select.addEventListener('input', function (event) {
 
 //if there is something saved in colorScheme, use that theme
 if (localStorage.getItem("colorScheme") !== null) {
+    select.value=localStorage.colorScheme;
     document.documentElement.style.setProperty('color-scheme', localStorage.colorScheme);
   }
