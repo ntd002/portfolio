@@ -95,8 +95,8 @@ if (form) {
         let data = new FormData(form);
         for (let [name, value] of data) {
             //mailto:leaverou@mit.edu?subject=Hello&body=Sup?
-            form.action = "mailto:ntd002@ucsd.edu?subject=" + name + "&body=" + encodeURIComponent(value);
-            location.href = form.url;
+            let url = form.action +"?subject=" + name + "&body=" + encodeURIComponent(value);
+            location.href = url;
             //console.log(name, value);
           }
 
