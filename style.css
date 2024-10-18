@@ -35,6 +35,10 @@ a.current {
   border-bottom-color: oklch(90% 3% 200);
 }
 
+a.resuLink {
+  padding:0em;
+}
+
 img.big_image {
   width: 75%;
 }
